@@ -1,2 +1,2 @@
-LANG = "DEBUG"
 button = "f1"
+LANG = "EN"

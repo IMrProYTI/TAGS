@@ -23,7 +23,7 @@ if config.LANG == "EN":
     track3 = input('Third variant of name: ')
 
     print()
-    print("config.button for use script:", config.button)
+    print("Press button for use script:", config.button)
 
 if config.LANG == "RU":
     print('TAGS писатель', version)
@@ -52,7 +52,7 @@ if config.LANG == "DEBUG":
     track2 = "track2"
     track3 = "track3"
 
-    print("Кнопка для использования скрипта:", config.button)
+    print("Press button for use script:", config.button)
 
 
 while True:
@@ -169,9 +169,7 @@ while True:
             print('Программа закроеться через 10 секунд.')
             sleep(10)
             exit()
-        if config.LANG == "EN":
+        if config.LANG == "EN" or config.LANG == "DEBUG":
             print('Program close after 10 seconds.')
             sleep(10)
             exit()
-wait()
-#

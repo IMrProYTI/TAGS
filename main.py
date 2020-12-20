@@ -1,4 +1,4 @@
-from keyboard import is_pressed, write, wait, send
+from keyboard import is_pressed, write, send
 from time import sleep
 from os import system
 import config

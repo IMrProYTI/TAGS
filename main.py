@@ -17,7 +17,7 @@ while True:
         status = False
         for line in TAGS:
             line = line.rstrip()
-            if line == '$':
+            if line == special_symbol:
                 if name1 != "":
                     write(name1) # name1
                     send(tags_divider)

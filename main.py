@@ -4,10 +4,12 @@ from time import sleep
 from os import system
 import config
 
+# Константы
 status = False
 TAGS = open("TAGS.txt", "r")
 system("mode con cols=70 lines=15")
 
+# Вызов текстового интерфейса
 NAMES = interface()
 
 name1 = NAMES[0][0]
@@ -18,10 +20,13 @@ track1 = NAMES[1][0]
 track2 = NAMES[1][1]
 track3 = NAMES[1][2]
 
+# Тело
 while True:
+    # Статус заданой кнопки
     if is_pressed(config.button):
         status = True
 
+    # Проверка статуса и выполнение команд
     if status == True:
         status = False
         for line in TAGS:
@@ -56,6 +61,7 @@ while True:
                 write(line)
                 send(config.tags_divider)
                 sleep(config.sleeptime)
+        # Завершающий диалог
         TAGS.close()
         if config.LANG == "RU":
             print('Программа закроеться через 10 секунд.')

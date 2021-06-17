@@ -8,6 +8,7 @@ TAGS = func.interface()
 
 FUN = func.cfg()
 SLEEP = float(FUN[2])
+TAGDIV = FUN[3]
 BUTTON = FUN[0]
 LANG = FUN[1]
 
@@ -24,7 +25,7 @@ while True:
 		status = False
 		for tag in TAGS:
 			write(tag)
-			send("TAB")
+			send(TAGDIV)
 			sleep(SLEEP)
 
 		# Завершающий диалог

@@ -1,6 +1,6 @@
 def interface():
     from config import LANG, button
-    version = "v0.5"
+    version = "v0.6"
 
     if LANG == "EN":
         print('TAGS writer', version)
@@ -20,7 +20,7 @@ def interface():
         print()
         print("Press button for use script:", button)
 
-        return [[name1, name2, name3],[track1, track2, track3]]
+        return name1, name2, name3, track1, track2, track3
 
     elif LANG == "RU":
         print('TAGS писатель', version)
@@ -40,7 +40,7 @@ def interface():
         print()
         print("Кнопка для использования скрипта:", button)
 
-        return [[name1, name2, name3],[track1, track2, track3]]
+        return name1, name2, name3, track1, track2, track3
 
     elif LANG == "DEBUG":
         print('TAGS writer', version)
@@ -56,7 +56,7 @@ def interface():
         print()
         print("Press button for use script:", button)
 
-        return [[name1, name2, name3],[track1, track2, track3]]
+        return name1, name2, name3, track1, track2, track3
 
     else:
         print('ERROR: {0} is wrong language'.format(LANG))

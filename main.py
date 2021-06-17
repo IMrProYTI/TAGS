@@ -10,15 +10,7 @@ TAGS = open("TAGS.txt", "r")
 system("mode con cols=70 lines=15")
 
 # Вызов текстового интерфейса
-NAMES = interface()
-
-name1 = NAMES[0][0]
-name2 = NAMES[0][1]
-name3 = NAMES[0][2]
-
-track1 = NAMES[1][0]
-track2 = NAMES[1][1]
-track3 = NAMES[1][2]
+name1, name2, name3, track1, track2, track3 = interface()
 
 # Тело
 while True:
